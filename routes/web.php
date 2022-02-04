@@ -23,6 +23,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dash', function () {
 })->name('dash');
 
 Route::resource('cargo',CargoController::class);
+
 Route::resource('roles',RolController::class);
 
 
